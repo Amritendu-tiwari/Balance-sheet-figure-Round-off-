@@ -5,7 +5,7 @@ from amount_rounder import process_excel, save_outputs
 
 st.set_page_config(page_title="Excel Converter", page_icon="📊", layout="wide")
 
-st.title("📊 Excel Amount Converter")
+st.title("📊Balance sheet Amount Converter")
 st.caption("Select lakh or thousand, upload your Excel file, and download the converted workbook.")
 
 # --- Only required choice ---
@@ -46,3 +46,4 @@ if uploaded:
     st.info("Processing complete. A copy and log were saved to the server.")
 else:
     st.warning("Upload an Excel file to begin.")
+
