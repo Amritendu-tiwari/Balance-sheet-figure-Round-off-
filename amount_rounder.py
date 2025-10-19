@@ -156,7 +156,7 @@ def _looks_like_year(cell, hdr_text: str, v, column_yearish: bool, row_yearish: 
 
 def process_excel(
     input_bytes: bytes,
-    mode: str = "thousand",                  # thousand | lakh | auto
+    mode: str = "thousand",                  # thousand | lakh | 
     header_row: int = 1,
     lakh_edge_threshold: float = 50000,      # < threshold → thousand fallback in lakh/auto
     sheets_include: Optional[List[str]] = None,
@@ -281,3 +281,4 @@ def save_outputs(
         json.dump(summary, f, ensure_ascii=False, indent=2)
 
     return xlsx_path, json_path
+
